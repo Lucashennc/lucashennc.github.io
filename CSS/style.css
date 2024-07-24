@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+strong {
+  font-weight: 700 !important;
+}
+
+/* Fonte */
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fontes/FiraSans-ExtraBold.ttf);
+}
+
+/* Body */
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* Elementos principais */
+.main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 140px;
+}
+
+/* Menus de Navegação */
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* botão de navegação  */
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 25px;
+}
+
+/* Lucas Henn Carniel */
+.title {
+  font-size: 35px;
+}
+
+/* imagem Lobo */
+.imglobo {
+  max-width: 320px;
+}
+
+/* imagem Lobo */
+.imglobo img {
+  width: 100%;
+  object-fit: contain;
+  min-width: 320px;
+}
+
+/* imagem Lobo, Desenvolvedor Front */
+.conteudo1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conteudoInicio {
+  padding: 20px;
+  background-color: #dbdbdb;
+  position: relative;
+}
+
+/* Conteudo Desenvolvedor Front */
+.conteudoInicio h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 80px;
+  max-width: 13ch;
+  font-weight: 700;
+  line-height: 80px;
+  position: relative; /* Adicionado para o pseudo-elemento */
+  z-index: 2; /* Adicionado para sobrepor o pseudo-elemento */
+}
+
+/* Pseudo elemento H2  */
+.conteudoInicio::before {
+  position: absolute;
+  content: "";
+  background: url("./figma/detalhe.svg") no-repeat;
+  width: 128px;
+  height: 128px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* conteudo inicio Paragrafo*/
+.conteudoInicio p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 24px;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+/* Conteúdo principal */
+.conteudo2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+/* Conteúdo principal */
+.conteudoPrincipal {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* Experiência*/
+.asideText {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: none;
+  gap: 100px;
+  font-size: 100px;
+  word-break: break-all;
+  line-height: 1;
+  color: #551a8b;
+}
+
+/* ex: bikecraft, devJunior  */
+.subtitulo {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Conteúdo de experiencia */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  background: #afaeae;
+  position: relative;
+  border-radius: 5px;
+}
+
+.textoexper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 5px;
+  background-color: #dbdbdb;
+  border-radius: 5px;
+}
+
+.conteudoParagrafo {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+/* Listagem de CSS HTML JS */
+.lista ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteudoParagrafo p {
+  max-width: 46ch;
+  padding: 10px 0;
+}
+
+/* Listagem de CSS HTML JS, cada elemento expecifico*/
+.lista li {
+  padding: 10px;
+  background: #ffffff;
+}
+
+.intro {
+  max-width: 46ch;
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+.conteudo3 {
+  background: #141414;
+}
+
+.intro2 {
+  color: #a3a3a3;
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  margin-top: 40px;
+}
+
+.subtitulo2 {
+  color: #a3a3a3;
+  margin-bottom: 20px;
+}
+
+.conteudo3 aside {
+  color: #141414;
+}
+
+.asideText2 {
+  width: 100%;
+  padding: 40px 20px;
+  font-size: 100px;
+  color: #020202;
+  word-break: break-all;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+  height: auto;
+  justify-items: center;
+}
+
+.paragrafoList {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragrafoList p {
+  color: #ffffff;
+}
+
+.lista2 {
+  color: #a3a3a3;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.conteudoParagrafo2 {
+  background: #0e0d0d;
+  padding: 20px;
+  border: 1px solid;
+  border-color: #0e0d0d;
+  border-radius: 6px;
+  position: relative;
+}
+.conteudoParagrafo2::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -4px;
+  top: 25px;
+}
+
+.imputAside {
+  width: 428px;
+  min-width: 428px;
+}
+
+.article2 {
+  margin-left: auto;
+  width: 49%;
+}
+
+.cursosIntensivos {
+  color: #969393;
+  margin-top: 40px;
+  display: flex;
+  padding: 20px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.horas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cursosIntensivos h2 {
+  padding-left: 30px;
+  background-image: url(./figma/icone\ curto\ intesivo.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: inline-block;
+}
+
+.cursosIntensivos p {
+  margin-top: 15px;
+  margin-left: 30px;
+  color: #dbdbdb;
+}
+
+.idiomas {
+  color: #969393;
+  margin-top: 40px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.idiomas h2 {
+  padding-left: 30px;
+  background-image: url(./figma/icone\ idioma.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: inline-block;
+}
+.idiomas p {
+  margin-top: 15px;
+  margin-left: 30px;
+  color: #dbdbdb;
+}
+
+footer {
+  background: #000000;
+  color: #cccccc;
+}
+.conteudoFooter {
+  width: 49%;
+  padding: 20px;
+  font-size: 25px;
+  margin-top: 100px;
+  max-width: 35ch;
+}
+.conteudoFooter h2 {
+  display: flex;
+  align-items: center;
+}
+.conteudoFooter p {
+  margin-top: 170px;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.main.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.linksfooter {
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 55px;
+  text-decoration: none;
+  color: #d8d6d6;
+}
+.linksfooter p,
+.linksfooter a {
+  color: #d8d6d6;
+}
+footer .main.flex::before {
+  position: absolute;
+  content: "";
+  background: url("./figma/detalhe.svg") no-repeat;
+  width: 128px;
+  height: 128px;
+  top: -65px;
+  left: 99px;
+  z-index: 1;
+}
