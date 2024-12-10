@@ -1,0 +1,61 @@
+@media screen and (max-width: 480px) {
+  form {
+    margin-top: 190px;
+  }
+
+  .menu p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .menu-items ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -20px;
+    padding: 0 20px;
+    font-size: 10;
+  }
+
+  .grade {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-action {
+    display: none;
+  }
+  .logo {
+    width: 90px;
+  }
+  .icon-wrapper {
+    max-width: 50px;
+  }
+  .icon-wrapper p {
+    display: none;
+  }
+}
+
+/* Grade */
+
+@media screen and (max-width: 480px) {
+  .menu img {
+    width: 90px;
+    margin-left: -15px;
+  }
+  .menu-action {
+    display: none;
+  }
+  .titulo_grade h2 {
+    font-size: 18px;
+  }
+  .materias_grade ul {
+    list-style: none;
+    gap: 10px;
+  }
+  .flex li {
+    font-size: 15px;
+  }
+  .menu-items ul {
+    gap: 70px;
+  }
+}

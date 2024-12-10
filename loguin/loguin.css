@@ -1,0 +1,113 @@
+.menu {
+  width: 100%; /* Faz o menu ocupar toda a largura */
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+  background-color: #fff; /* Cor de fundo */
+  padding: 15px 20px; /* Espaçamento interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao menu */
+  position: fixed; /* Fixa o menu no topo */
+  top: 0; /* Alinha no topo */
+  left: 0; /* Alinha à esquerda */
+  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+.menu p {
+  font-size: 25px;
+  background: linear-gradient(90deg, #0d4177, #098150); /* Gradiente */
+  -webkit-background-clip: text; /* Clipa o fundo ao texto */
+  -webkit-text-fill-color: transparent;
+}
+.menu span {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: linear-gradient(90deg, #098150, #0d4177); /* Gradiente */
+  -webkit-background-clip: text; /* Clipa o fundo ao texto */
+  -webkit-text-fill-color: transparent;
+}
+
+.menu img {
+  width: 80px;
+}
+
+/* Formulario */
+
+.loguin-form {
+  max-width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.form-group label {
+  background: linear-gradient(90deg, #0d4177, #098150); /* Gradiente */
+  -webkit-background-clip: text; /* Clipa o fundo ao texto */
+  -webkit-text-fill-color: transparent;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #098150;
+  outline: none;
+}
+
+.btn {
+  background: linear-gradient(90deg, #0d4177, #098150);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.forgot-password {
+  margin-top: 10px;
+}
+
+.EsqueceuSenha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.EsqueceuSenha img {
+  width: 25px;
+  height: 25px;
+}
+
+.EsqueceuSenha a {
+  font-size: 15px;
+  color: #7f7f7f;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
